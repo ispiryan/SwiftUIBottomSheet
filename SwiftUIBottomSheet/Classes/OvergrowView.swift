@@ -29,7 +29,10 @@ public struct OvergrowScrollView<Content: View>: View {
         .introspect(.scrollView, on: .iOS(
           .v15,
           .v16,
-          .v17
+          .v17,
+          .v18,
+          .v26,
+          .v27
         )) {
             $0.alwaysBounceVertical = height > maxHeight
         }
